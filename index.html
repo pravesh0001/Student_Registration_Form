@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="registrationForm">
+      <h2>🎓 Student Registration</h2>
+
+      <label>Full Name</label>
+      <input type="text" id="fullName" placeholder="Enter your name" required />
+
+      <label>Date of Birth</label>
+      <input type="date" id="dob" required />
+
+      <label>Age</label>
+      <input type="text" id="age" readonly />
+
+      <label>Address</label>
+      <textarea id="address" placeholder="Enter your address" rows="3" required></textarea>
+
+      <label>Branch</label>
+      <select id="branch" required>
+        <option value="">-- Select Branch --</option>
+        <option value="CS">Computer Science</option>
+        <option value="IT">Information Technology</option>
+        <option value="E&TC">Electronics & Telecom</option>
+        <option value="Mechanical">Mechanical</option>
+      </select>
+
+      <button type="submit">Register</button>
+      <p id="message"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
